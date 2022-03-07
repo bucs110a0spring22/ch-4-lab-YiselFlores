@@ -1,15 +1,49 @@
 import turtle
+import math
 
-########### Your Code here ##############
-# You should only have functions here
-# If you have anything outside of a function, 
-# then you do not fully understand functions
-# and should review how they work or ask for help
+def setupWindow(window=None):
+ window.setworldcoordinates(-360, -2, 360, 2)
+  
+def setupAxis(myTurtle=None):
+ myTurtle.down()
+ myTurtle.goto(-360,0)
+ myTurtle.goto(360,0)
+ myTurtle.up()
+ myTurtle.goto(0,-1)
+ myTurtle.down()
+ myTurtle.goto(0,1)
+ myTurtle.up()
+ 
 
 
 
+def drawSineCurve(myTurtle = None):
+  myTurtle.color("green")
+  myTurtle.up()
+  myTurtle.goto(-360,0)
+  myTurtle.down()
+  for angle in range (-360,360):
+   myTurtle.goto(angle,math.sin(math.radians(angle)))
+ 
 
 
+def drawCosineCurve(myTurtle=None):
+  myTurtle.color("red")
+  myTurtle.up()
+  myTurtle.goto(-360,0)
+  myTurtle.down()
+  for angle in range (-360,360):
+   myTurtle.goto(angle,math.cos(math.radians(angle)))
+ 
+
+
+def drawTangentCurve(myTurtle=None):
+  myTurtle.color("blue")
+  myTurtle.up()
+  myTurtle.goto(-360,0)
+  myTurtle.down()
+  for angle in range (-360,360):
+   myTurtle.goto(angle,math.tan(math.radians(angle)))
 
 
 
@@ -19,13 +53,13 @@ def main():
     wn = turtle.Screen()
     wn.tracer(5)
     dart = turtle.Turtle()
-    dart.speed(0)
+    dart.speed(10)
     drawSineCurve(dart)
 
     #Part B
     setupWindow(wn)
     setupAxis(dart)
-    dart.speed(0)
+    dart.speed(10)
     drawSineCurve(dart)
     drawCosineCurve(dart)
     drawTangentCurve(dart)
