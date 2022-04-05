@@ -7,23 +7,29 @@
 
 _Replace anything surrounded by the `< >` symbols._
 
+#### CS 110
+# Midterm - Python Programming
+
+***
+
+_Replace anything surrounded by the `< >` symbols._
+
 ## SUMMARY:
- This program draws a sine, cosine and tangent line curve using 
- turtle.
-
-## GRACE DAYS
-Grace days used for this assignment: 0
-
-Grace days remaining: 5/5
+What did you clean up?:
+changed window to wn
+Summary of function(s) added:
+graphtime(myturtle):
+ "Function gives you the date in which the graph was drawn"
+ birthday_count(current_date):
+  "Function gives you the months and days passed since the date of the graph drwan and user's bday"
+Summary of Feature Added:
+ ^^ see above
 
 ## KNOWN BUGS AND INCOMPLETE PARTS:
  None
 
 ## REFERENCES:
- Chapter 4 
- Lab: Functions
- CS110 Spring 2022
-
+ Turtle time library
 
 ## MISCELLANEOUS COMMENTS:
- none
+ Honeslty looked through python library to minimize my line of code but it tripped me up considering that lab 4 had a turtle as parameter and have to use that in all functions. Like you can plot axis with other methods and not turtle, and was alot harder to minimize my code that way *for me*.
